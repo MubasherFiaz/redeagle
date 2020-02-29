@@ -72,7 +72,7 @@ class Client extends Controller
 'submit_by'=>$req['nameofadmin'],
 'submit_id'=>$req['submit_by_id'],
 
-
+ 
             ]);
        //  print_r(Auth::user()->name);exit();
             return redirect('addrecord.php')->with('message','New Client data is Submitted Successfully');     
@@ -190,12 +190,10 @@ class Client extends Controller
             return redirect('error.php');
             exit();
         }
-      // print_r($req->no);exit();
+      //print_r($req->no);exit();
          $no=$req->no;
         //print_r($no);exit();
-         $this->validate($req,[
-         'no'=>'required|alpha_num|max:11|min:11',
-           ]);
+        
          $dataa=DB::select("SELECT * FROM clientts where `number`=$no");
       // print_r($dataa);exit();
      

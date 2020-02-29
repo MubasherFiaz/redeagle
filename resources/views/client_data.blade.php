@@ -8,12 +8,10 @@
                 <h3>Table of Sales({{$data->total()}})</h3>
               </div>
                   
-                <form id="demo-form2" action="search" method="post" data-parsley-validate class="form-horizontal form-label-left">
+                 <form id="demo-form2" action="search" method="post" data-parsley-validate class="form-horizontal form-label-left">
                      {{csrf_field()}}
 <div class="title_right">
-
                 <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                 
                   <div class="input-group">
                      
                     <input type="text" name="no" class="form-control" placeholder="Search By Number...">

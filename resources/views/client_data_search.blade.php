@@ -32,12 +32,7 @@
                       </li>
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                        <ul class="dropdown-menu" role="menu">
-                          <li><a href="#">Settings 1</a>
-                          </li>
-                          <li><a href="#">Settings 2</a>
-                          </li>
-                        </ul>
+                       
                       </li>
                       <li><a class="close-link"><i class="fa fa-close"></i></a>
                       </li>
@@ -83,82 +78,24 @@
 									<tr>
 										<td> Zip:</td>
 										<td>{{$data->zip}}</td>
-									</tr>
+									</tr>                  <tr>
+                    <td> Lead Type:</td>
+                    <td>{{$data-> lead_type}}</td>
+                  </tr>    
+                   <td> Status:</td>
+                    <td>{{$data->status}}</td>
+                  </tr>    
+                   <td> Created at:</td>
+                    <td>{{$data->created_at}}</td>
+                  </tr>   
+                    <td> Update at:</td>
+                    <td>{{$data->updated_at}}</td>
+                  </tr>    
+                   <td> Submited by:</td>
+                    <td>{{$data->submit_by}}</td>
+                  </tr>
 									<tr>
-										<td>House Type  </td>
-										<td>{{$data->house_type}}</td>
-									</tr>
-									<tr>
-										<td>Loan type</td>
-										<td>{{$data->loan_type}}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>House Value :</td>
-										<td>{{$data->house_value}}</td>
-									</tr>
-                                    <tr>
-                                        <td>2nd Mortgage Balance </td>
-										<td>{{$data->mortgage_balance_1}}</td>
-									</tr>
-                                    <tr>
-                                        <td>1st interest Rate</td>
-										<td>{{$data->interest_rate_1}}</td>
-									</tr>                                    
-                                    <tr>
-                                        <td>1st Rate type </td>
-										<td>{{$data->rate_type_1}}</td>
-                                   
-									</tr>   
-                                    <tr>
-                                        <td>2st Mortgage Balance </td>
-										<td>{{$data->mortgage_balance_2}}</td>
-                                   
-									</tr>
-                                    <tr>
-                                        <td>2nd Interst Rate: </td>
-										<td>{{$data->interest_rate_2}}</td>
-                                   
-									</tr>
-                                    <tr>
-                                        <td>2nd Rate type</td>
-										<td>{{$data->rate_type_2}}</td>
-                                  </tr>
-                                     <tr>
-                                        <td>Cashout</td>
-										<td>{{$data->cashout}}</td>
-                                  </tr>
-                                     <tr>
-                                        <td>Ltv</td>
-										<td>{{$data->ltv}}</td>
-                                  </tr>
-                                     <tr>
-                                        <td>Credit Rating</td>
-										<td>{{$data->credit_rating}}</td>
-                                  </tr>
-                                     <tr>
-                                        <td>Late Payments</td>
-										<td>{{$data->late_payments}}</td>
-                                  </tr>
-                                     <tr>
-                                        <td>Last Refinance</td>
-										<td>{{$data->last_refinance}}</td>
-                                  </tr>
-                                     <tr>
-                                        <td>Foreclosure</td>
-										<td>{{$data->foreclosure}}</td>
-                                  </tr>
-                                     <tr>
-                                        <td>Employments</td>
-										<td>{{$data->employment}}</td>
-                                  </tr>
-                                     <tr>
-                                        <td>Lo</td>
-										<td>{{$data->lo}}</td>
-                                  </tr>
-                                     <tr>
-                                        <td>Textarea</td>
-										<td>{{$data->textarea}}</td>
-                                  </tr>
+									
                                     
 								</table> 
                           </div>
